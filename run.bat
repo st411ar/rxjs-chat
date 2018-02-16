@@ -1,0 +1,1 @@
+start cmd /k ng serve -o
