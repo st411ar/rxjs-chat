@@ -11,6 +11,8 @@ import {MessagesService} from './message/messages.service';
 import {ThreadsService} from './thread/threads.service';
 import {UsersService} from './user/users.service';
 import { ChatThreadComponent } from './chat-thread/chat-thread.component';
+import { ChatMessageComponent } from './chat-message/chat-message.component';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -20,10 +22,12 @@ import { ChatThreadComponent } from './chat-thread/chat-thread.component';
     ChatNavbarComponent,
     ChatThreadsComponent,
     ChatWindowComponent,
-    ChatThreadComponent
+    ChatThreadComponent,
+    ChatMessageComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [
     MessagesService,
